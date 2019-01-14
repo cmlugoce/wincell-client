@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700i');
+ .nav-title{
+
+    font-weight: bold;
+    color: yellow;
+    font-size: 2.5em;    
+    font-family: 'Ubuntu Mono', monospace;
+
+
+}
+
+#nav a{
+    background-color: black;
+    color: yellow;
+}
+#nav {
+    background-color: black;
+    color: yellow;
+}
+
+
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-image: url("../bottle.jpg");
+}
+
+#wine101 {
+    
+    background-color: whitesmoke;
+}
+
+.error-page {
+    background-color: whitesmoke;
+}
+
+.active-wine_name{
+
+    font-size: 2.5em; 
+    font-weight: bold;
+}
+
+.wine-info h3{
+  font-size: 2em;
+}
