@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import WineCard from "../components/WineCard";
 import { getWines } from '../actions/wines';
 import {Button} from 'semantic-ui-react';
-import {Input} from 'mdbreact';
+import { Input } from 'semantic-ui-react'
 import './Wines.css';
 
 
@@ -61,8 +61,11 @@ class Wines extends Component {
           <br />                       
           <br />
           <br />
+           
+           <Input focus placeholder='Search...'  onChange={this.handleChange}/>
+           <br />
+           <br />
            <div>
-           <Input label="Filter by name" icon="search" onChange={this.handleChange}/>
            <Button inverted color='yellow' onClick={() => this.setState({sortedBy: 'likes', sorted: true})}  content='Sort by Likes'/>  
             <Button inverted color='yellow' onClick={() => this.setState({sortedBy: 'name', sorted: true})}  content='Sort by Name'/>  
             <div>

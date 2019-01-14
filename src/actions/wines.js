@@ -36,7 +36,7 @@ const removeWine = wineId => {
 export const getWines = () => {
 
   return dispatch => {
-      return fetch('http://localhost:3001/api/wines')
+      return fetch( 'https://winecell-api.herokuapp.com/api/wines')
       .then(response => response.json())
       .then(wines => dispatch(setWines(wines)))
       .catch(error => console.log(error));
@@ -47,7 +47,7 @@ export const getWines = () => {
 export const createWine = wine => {
     console.log('C')
     return dispatch => {
-        return fetch('http://localhost:3001/api/wines', {
+        return fetch('https://winecell-api.herokuapp.com/api/wines', {
             method: "POST",
             headers: {
                 'Content-type': 'application/json'
@@ -72,7 +72,7 @@ export const createWine = wine => {
 export const addLike = (wine) => {
    
     return dispatch => {
-      return fetch(`http://localhost:3001/api/wines/${wine.id}`, {
+      return fetch(`https://winecell-api.herokuapp.com/api/wines/${wine.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
@@ -87,7 +87,7 @@ export const addLike = (wine) => {
 
   export const deleteWine = (id) => {
     return dispatch => {
-      return fetch(`http://localhost:3001/api/wines/${id}`, {method: 'delete'})
+      return fetch(`https://winecell-api.herokuapp.com/api/wines/${id}`, {method: 'delete'})
         .then(dispatch(removeWine({id})))
         .catch(error => console.log(error))
     }
