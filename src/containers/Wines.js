@@ -57,19 +57,20 @@ class Wines extends Component {
          })
          
          return (
-        <div className="WinesContainer">
+        <div className="Container">
           <br />                       
           <br />
           <br />
-           
-           <Input focus placeholder='Search...'  onChange={this.handleChange}/>
-           <br />
-           <br />
            <div>
-           <Button inverted color='yellow' onClick={() => this.setState({sortedBy: 'likes', sorted: true})}  content='Sort by Likes'/>  
-            <Button inverted color='yellow' onClick={() => this.setState({sortedBy: 'name', sorted: true})}  content='Sort by Name'/>  
+           <input type = 'text'onChange={this.handleChange}   placeholder = 'Search...' id='search'/>
+           
+           
+           <span><Button  color='orange' onClick={() => this.setState({sortedBy: 'likes', sorted: true})}  content='Sort by Likes'/> </span>
+            <span><Button  color='orange' onClick={() => this.setState({sortedBy: 'name', sorted: true})}  content='Sort by Name'/>  </span>
             <div>
-            <div>
+              <br />
+              <br />
+            <div className='WinesContainer'>
                {filterWines.map(wine => <WineCard key={wine.id} wine={wine}  />)} 
                        
                </div>    

@@ -1,20 +1,39 @@
 import React from "react";
 import './components.css';
-import { Container, Header} from 'semantic-ui-react'
+import { Container} from 'semantic-ui-react'
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  font-size: 4em;
+  margin-top: 10%;
+  color: orange;
+  background:rgba(0,0,0,0.5);
+  width: auto;
+  
+
+`;
 
 
 const Home = () => {
 
     return (
-      <Container >
-         <div>
-           <br />
-           <br />
-           <br />
-           <br />
-          <Header as='h1' color='yellow'>Never forget your favorite wine!</Header>
+      <div id='home'>
+         <Wrapper id='wrap'>
+        
+           
+              Life is too short to drink bad wine 
+             
+            
+         </Wrapper>
+         <div id='line'>
+           <hr id='homey' />
            </div>
-            </Container >
+      </div>
       );
     };
 export default Home;

@@ -66,8 +66,8 @@ class WineCard extends Component {
         </Link>
         
         
-        <Button inverted color='red' value={this.props.wine.id} onClick={this.handleClick}><Icon name='heart' size='small'/><span>{this.props.wine.likes}</span>
-            
+        <Button inverted color='blue' value={this.props.wine.id} onClick={this.handleClick}>  <Icon className='icon-heart' name='heart' inverted color='red'size='small'/>
+        <span className='like-number'>{this.props.wine.likes}</span> 
        </Button>
        
 

@@ -1,10 +1,17 @@
 .WinesContainer{
-    padding: 16px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
 }
 
 .WineCard {
    float: left;
    background: whitesmoke;
+   /*flex-shrink: auto;*/
+   border-radius: 5px;
    width: 300px;
    height: 350px;
    margin: 12px;
@@ -21,6 +28,36 @@
       height: 200px;
       
       
+      
+  }
+
+  
+
+  #image-container {
+    width: 200px;
+    height: 120px;
+}
+
+/* resize images */
+#image {
+   
+float: left;
+margin-top: 10px;
+margin-left:25%;
+border-radius: 5px;
+border:1px solid orange;
+
+
+
+}
+
+  #search{
+      margin: 20px;
+      width: 500px;
+      height: 35px;
+      border-radius: 5px;
+      position: center;
+      
   }
 
   #wineName {
@@ -29,11 +66,178 @@
 
   .form {
     
-      background-color: azure;
-  }
-
-  .formss{
+      color: white;
+      margin: auto;
+      width: 50%;
       
+     padding: 10px;
+      
+      
+  }
+  #add {
+      color: white;
+  }
+  .formss{
+     
       font-size: 2em;
+      
+     
 
   }
+
+  
+
+  @media (max-width: 375px){
+
+    .form {
+    
+        color: white;
+        margin: auto;
+        width: 100%;
+        
+       padding: 10px;
+        
+        
+    }
+   #list{
+       width: 40%;
+       font-size: 1em;
+   }
+    #search{
+        width: auto;
+       
+       
+    }
+    .ui.violet.inverted button{
+     margin-bottom: 10px;
+    }
+
+    ul {
+        text-align: initial;
+    }
+
+    ul > li {
+        margin-bottom: 5px;
+    }
+
+    #allWines{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 800px){
+
+    #ContainerWrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #image {
+        align-self: center;
+        margin-right: 70px;
+        
+    }
+
+    #list{
+        align-self: center;
+        margin: 0;
+       
+    }
+
+   
+  }
+
+  @media (min-width: 800px){
+
+    #ContainerWrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #image {
+        float: left;
+        margin-top: 10px;
+        margin-left: 5px;
+        border-radius: 5px;
+        border: 1px solid orange;
+        margin-bottom: 10px;
+    }
+
+    #list {
+        -ms-flex-item-align: center;
+        /* align-self: center; */
+        margin-bottom: 10px;
+        margin-left: 40px;
+        width: 30%;
+        font-size: 1.5em;
+        text-align: initial;
+    }
+
+    ul {
+        text-align: initial;
+    }
+    #search{
+        width: 50%;
+       
+       
+    }
+  }
+
+  @media (max-width: 1024px){
+
+    #ContainerWrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #image {
+        align-self: center;
+        margin-right: 70px;
+        
+    }
+
+    #list{
+        align-self: center;
+        margin-bottom: 10px;
+       
+    }
+
+
+  }
+
+  @media (min-width: 1025px){
+    #ContainerWrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #image {
+        
+            float: left;
+            margin-top: 10px;
+            margin-left: 10%;
+            border-radius: 5px;
+            border: 1px solid orange;
+            height: 30%;           
+        
+    }
+
+    #list{
+        align-self: center;
+        margin-bottom: 10px;
+       
+    }
+  }
+
+  @media (max-width: 1600px){
+
+    #image{
+      margin-left: 10%;
+      height: 30%;
+    }
+  }
+
+
+  
+    
+  

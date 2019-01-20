@@ -7,7 +7,7 @@ class wineIndex extends React.Component {
 
    render(){
     return (
-        <div>
+        <div className = 'maipn'>
             <br />
             <br />
          <Wines />

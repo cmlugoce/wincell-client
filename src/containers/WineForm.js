@@ -43,34 +43,34 @@ class WineForm extends Component {
       
        <div className='form'>
        <div className='formss'>
-          <h1 ><strong> Add a wine bottle</strong></h1> </div>
+          <h1 className='add'>Add a wine bottle</h1> </div>
            <Form  onSubmit={this.handleOnSubmit}>
-           <Form.Field>
-             <div><input type = 'text'onChange={this.handleOnChange}  name= 'name' value={name} placeholder = 'Name' /></div>
-             </Form.Field>
-             <Form.Field>
-             <div><input type = 'text'onChange={this.handleOnChange}  name= 'description' value={description} placeholder = 'Description' /></div>
-             </Form.Field>
-             <Form.Field>
-             <div><input type = 'text'onChange={this.handleOnChange}  name= 'wine_type' value={wine_type} placeholder = 'Wine type' /></div>
-             </Form.Field>
-             <Form.Field>
-             <div><input type = 'text'onChange={this.handleOnChange}  name= 'image' value={image} placeholder = 'Image' /></div>
-             </Form.Field>
-             <Form.Field>
+          
+             <div><input type = 'text'onChange={this.handleOnChange}  name= 'name' value={name} placeholder = 'Name' /></div><br />
+             
+            
+             <div><input type = 'text'onChange={this.handleOnChange}  name= 'description' value={description} placeholder = 'Description' /></div><br />
+             
+            
+             <div><input type = 'text'onChange={this.handleOnChange}  name= 'wine_type' value={wine_type} placeholder = 'Wine type' /></div><br />
+             
+            
+             <div><input type = 'text'onChange={this.handleOnChange}  name= 'image' value={image} placeholder = 'Image' /></div><br />
+             
+            
              <div>
              <label htmlFor='year'> Year: </label>
-               <input type = 'number' onChange={this.handleOnChange} name= 'year' value={year} placeholder = 'Year' /></div>
-               </Form.Field>
-               <Form.Field>
+               <input type = 'number' onChange={this.handleOnChange} name= 'year' value={year} placeholder = 'Year' /></div><br />
+               
+              
              <div>
              
              
                <label htmlFor='price'> Price: </label>
-               <input type = 'number'onChange={this.handleOnChange}  name= 'price' value={price} placeholder = 'Price' /></div>
-               </Form.Field>
+               <input type = 'number'onChange={this.handleOnChange}  name= 'price' value={price} placeholder = 'Price' /></div><br />
+               
                 <br></br>
-               <Button type="submit" > Add Wine bottle </Button>
+               <Button inverted color='white' type="submit" > Add Wine bottle </Button>
                <br />
             </Form>
             <br />

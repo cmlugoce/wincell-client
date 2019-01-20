@@ -1,33 +1,30 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './components.css';
-const Navbar = () => {
-    return (
-        <nav className="navbar is-fixed-top" id="nav">
-        <div className="nav-title">WINECELL</div>
 
-      <div className="container">
-        <div id="navbarMenu" className="navbar-menu">
-          <div className="navbar-end">
-            
-            <Link className="navbar-item" to="/">
-              home
-            </Link>
-            <Link className="navbar-item" to="/wines">
-              all wines
-            </Link>
-            <Link className="navbar-item" to="/wine/new">
-              add wine
-            </Link>
-            <Link className="navbar-item" to="/winebasics">
-              wine 101
-            </Link>
-            
-          </div>
+const Navbar = ()=> {
+  
+
+   
+    return (
+
+    <div>
+        <div id = 'logo'>
+
+        Winecell
         </div>
-      </div>
-    </nav>
+   <div id='navbar'>
+            <NavLink  to="/" exact > Home </NavLink>
+            <NavLink  to="/wines" exact > All wines </NavLink>
+            <NavLink  to="/wine/new" exact > Add wine </NavLink>
+            <NavLink  to="/winebasics" exact > Wine 101 </NavLink>
+            
+         </div>
+
+         </div>
     )
-};
+}
+
+
 
 export default Navbar;

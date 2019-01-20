@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
  .nav-title{
 
     font-weight: bold;
@@ -18,13 +19,104 @@
     background-color: black;
     color: yellow;
 }
+ i{
+    
+        float: right;
+        cursor: pointer;
+        color: black;
+    }
 
+    #b{
+        display: none;
+    }
 
+    .navbar-end{
+        float: right;
+    }
 
-body {
+    .icon-heart {
+       color:  red;
+    }
+
+    .like-number {
+        margin: 3px;
+    }
+
+    @media (min-width: 480px) {
+	
+        
+    
+            .container-wide{
+                display: block;
+            }
+    
+            .container-narrow {
+                display: none;
+            }
+        
+    }
+
+ #wrap{
+     font-family: 'Parisienne', cursive;
+ }
+
+html, body {
+    height: 100%;
+    margin: 0;
     font-family: 'Ubuntu Mono', monospace;
-    background-image: url("../bottle.jpg");
+    
+    
+    
+    
+   
 }
+body{
+    background: url("./wine-cellar.jpg")  ;
+    background-position: center center;
+			background-repeat:  no-repeat;
+			
+			background-size:  cover;
+            background-color: #999;
+            z-index: -999;
+          
+
+
+
+}
+
+div, body{
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+ #line{
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+   
+ }
+ #homey {
+    border-top: 3px double orange;
+    background-color: transparent;
+    width: 50%;
+   
+}
+
+  #home-bg{
+   
+    max-width: 100%;
+    max-height: 100%;
+  }
+/* #home {
+
+    height: 100%;
+   
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 
 #wine101 {
     
@@ -41,6 +133,10 @@ body {
     font-weight: bold;
 }
 
-.wine-info h3{
-  font-size: 2em;
+ ul{
+    text-align: justify;
+  margin: 0 auto;
+  width: 30em;
+ 
 }
+
